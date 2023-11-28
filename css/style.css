@@ -1,3 +1,76 @@
-#wrapper{
+body{
+    margin: 0;
     
+}
+
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+    'dv hd nv'
+    'na na na'
+    'sc sc sc'
+    'ft ft ft';
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    grid-template-columns: 20vw 65vw 15vw;
+    grid-template-rows: 20vh 5vh 60vh 15vh;
+
+}
+
+
+#logga{
+    grid-area: dv;
+    background-color: aqua;
+
+}
+
+header{
+    grid-area: hd;
+    background-color: blueviolet;
+
+}
+
+#search{
+    grid-area: nv;
+    background-color: chartreuse;
+
+}
+
+#buttons{
+    grid-area: na;
+    background-color: gold;
+
+}
+
+section{
+    grid-area: sc;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+#art1{
+    background-color: aliceblue;
+    height: 45vh;
+    width: 25vw;
+}
+
+#art2{
+    background-color: aliceblue;
+    height: 45vh;
+    width: 25vw;
+}
+
+#art3{
+    background-color: aliceblue;
+    height: 45vh;
+    width: 25vw;
+}
+
+footer{
+    grid-area: ft;
+    background-color: darkgreen;
 }

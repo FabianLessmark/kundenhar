@@ -19,7 +19,7 @@ body{
 }
 
 
-#logga{
+.logga{
     grid-area: dv;
     background-color: aqua;
 
@@ -31,13 +31,13 @@ header{
 
 }
 
-#search{
+.search{
     grid-area: nv;
     background-color: chartreuse;
 
 }
 
-#buttons{
+.buttons{
     grid-area: na;
     background-color: gold;
 
@@ -52,19 +52,19 @@ section{
     align-items: center;
 }
 
-#art1{
+#recept1{
     background-color: aliceblue;
     height: 45vh;
     width: 25vw;
 }
 
-#art2{
+#recept2{
     background-color: aliceblue;
     height: 45vh;
     width: 25vw;
 }
 
-#art3{
+#recept3{
     background-color: aliceblue;
     height: 45vh;
     width: 25vw;
@@ -73,4 +73,34 @@ section{
 footer{
     grid-area: ft;
     background-color: darkgreen;
+}
+
+#wrapper2{
+    display: grid;
+    grid-template-areas: 
+    'dv hd hd hd nv'
+    'na na na na na'
+    'as as sc2 as2 as2'
+    'ft ft ft ft ft';
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    grid-template-columns: 20vw 5vw 50vw 10vw 15vw;
+    grid-template-rows: 20vh 5vh 60vh 15vh;
+
+}
+
+#left{
+    grid-area: as;
+    background-color: gray;
+}
+
+#section_recept{
+    grid-area: sc2;
+    background-color: blue;
+}
+
+#right{
+    grid-area: as2;
+    background-color: red;
 }

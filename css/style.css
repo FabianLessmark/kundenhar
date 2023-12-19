@@ -189,7 +189,7 @@ ul, ol{
 
 #section_recept{
     grid-area: sc2;
-    background-color: #fbc1b33;
+    background-color: #fbc1b3;
     display: block;
     flex-direction: column;
 }
